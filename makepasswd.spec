@@ -10,7 +10,6 @@ Source0: 	http://www.defora.org/projects/makepasswd/files/%{name}-%{version}.tar
 License: 	GPL
 Group: 		System/Configuration/Other
 URL: 		http://www.defora.org/index.php?page=projects&project=makepasswd
-BuildRoot: 	%{_tmppath}/%{name}-%{version}
 
 %description
 Makepasswd generates pseudo-random passwords of a desired length. It is able
