@@ -1,6 +1,6 @@
 %define name 	makepasswd
 %define version 0.4.2
-%define release %mkrel 4
+%define release %mkrel 6
 
 Name: 		%{name}
 Version: 	%{version}
