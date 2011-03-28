@@ -1,15 +1,15 @@
 %define name 	makepasswd
-%define version 0.4.2
-%define release %mkrel 8
+%define version 0.5.0
+%define release %mkrel 1
 
 Name: 		%{name}
 Version: 	%{version}
 Release: 	%{release}
 Summary: 	Generate random passwords
-Source0: 	http://www.defora.org/projects/makepasswd/files/%{name}-%{version}.tar.bz2
 License: 	GPL
 Group: 		System/Configuration/Other
 URL: 		http://www.defora.org/index.php?page=projects&project=makepasswd
+Source0: 	http://www.defora.org/os/download/3500/%{name}-%{version}.tar.gz
 BuildRoot: 	%{_tmppath}/%{name}-%{version}
 
 %description
@@ -20,18 +20,15 @@ to generate its crypted equivalent.
 %setup -q
 
 %build
-%make CFLAGS="$RPM_OPT_FLAGS"
+%make CFLAGS="%{optflags}"
 
 %install
 rm -fr %{buildroot}
-%makeinstall PREFIX=%{buildroot}/%{_prefix}
-chmod 644 AUTHORS BUGS README
+%makeinstall PREFIX=%{buildroot}%{_prefix}
 
 %clean
 rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
-%doc AUTHORS BUGS README
 %{_bindir}/makepasswd
-
