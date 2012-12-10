@@ -32,3 +32,45 @@ rm -rf %{buildroot}
 %files
 %defattr(-,root,root)
 %{_bindir}/makepasswd
+
+
+%changelog
+* Mon Mar 28 2011 Guillaume Rousse <guillomovitch@mandriva.org> 0.5.0-1mdv2011.0
++ Revision: 648675
+- new version
+
+* Fri Dec 10 2010 Oden Eriksson <oeriksson@mandriva.com> 0.4.2-8mdv2011.0
++ Revision: 620292
+- the mass rebuild of 2010.0 packages
+
+* Fri Sep 04 2009 Thierry Vignaud <tv@mandriva.org> 0.4.2-7mdv2010.0
++ Revision: 429938
+- rebuild
+
+* Mon Jul 28 2008 Thierry Vignaud <tv@mandriva.org> 0.4.2-6mdv2009.0
++ Revision: 251791
+- rebuild
+
+* Thu Jan 03 2008 Olivier Blin <oblin@mandriva.com> 0.4.2-4mdv2008.1
++ Revision: 140944
+- restore BuildRoot
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill re-definition of %%buildroot on Pixel's request
+    - import makepasswd
+
+
+* Tue Aug 01 2006 Guillaume Rousse <guillomovitch@mandriva.org> 0.4.2-4mdv2007.0
+- %%mkrel
+
+* Thu Jul 28 2005 Guillaume Rousse <guillomovitch@mandriva.org> 0.4.2-3mdk 
+- spec cleanup
+- correct optimisations
+
+* Fri Jul 23 2004 Guillaume Rousse <guillomovitch@mandrake.org> 0.4.2-2mdk 
+- rpmbuildupdate aware
+
+* Sun Jan 25 2004 Austin Acton <austin@mandrake.org> 0.4.2-1mdk
+- from Taj Morton <taj@wildgardenseed.com> :
+  - First Package
+
