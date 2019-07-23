@@ -4,7 +4,7 @@
 
 Name: 		%{name}
 Version: 	%{version}
-Release: 	%{release}
+Release:	1
 Summary: 	Generate random passwords
 License: 	GPL
 Group: 		System/Configuration/Other
