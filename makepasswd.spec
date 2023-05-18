@@ -18,17 +18,12 @@ to generate its crypted equivalent.
 %autosetup -n %{name}-%{version} -p1
 
 %build
-%make CFLAGS="%{optflags}"
+#nothing to build
 
 %install
-rm -fr %{buildroot}
-%makeinstall PREFIX=%{buildroot}%{_prefix}
-
-%clean
-rm -rf %{buildroot}
+install -D -m0755 makepasswd %{buildroot}/usr/bin/makepasswd
 
 %files
-%defattr(-,root,root)
 %{_bindir}/makepasswd
 
 
