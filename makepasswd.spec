@@ -15,7 +15,7 @@ Makepasswd generates pseudo-random passwords of a desired length. It is able
 to generate its crypted equivalent.
 
 %prep
-%setup -q
+%autosetup -n %{name}-%{version} -p1
 
 %build
 %make CFLAGS="%{optflags}"
