@@ -1,6 +1,6 @@
 
 Name: 		makepasswd
-Version: 	0.10
+Version: 	1.10
 Release:	1
 Summary: 	Generate random passwords
 License: 	GPL
