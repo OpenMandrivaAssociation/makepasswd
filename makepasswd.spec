@@ -6,7 +6,7 @@ Release:	1
 Summary: 	Generate random passwords
 License: 	GPL
 Group: 		System/Configuration/Other
-URL: 		http://www.defora.org/index.php?page=projects&project=makepasswd
+URL: 		https://www.defora.org/index.php?page=projects&project=makepasswd
 Source0:    http://ftp.debian.org/debian/pool/main/m/makepasswd/makepasswd_%{version}.orig.tar.gz
 #Source0: 	http://www.defora.org/os/download/3500/%{name}-%{version}.tar.gz
 BuildRoot: 	%{_tmppath}/%{name}-%{version}
